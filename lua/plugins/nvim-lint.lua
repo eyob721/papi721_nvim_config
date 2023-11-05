@@ -6,8 +6,11 @@ return {
         linters_by_ft = {
             -- shellcheck is not needed here, mason handles it
             -- sh = { "shellcheck" },
+            -- TODO: Add Betty linter for C files
+            -- c = { "cpplint" }, -- not a good linter
             python = { "pycodestyle" },
             markdown = { "vale" },
+
             -- Use the "*" filetype to run linters on all filetypes.
             -- ['*'] = { 'global linter' },
             -- Use the "_" filetype to run linters on filetypes that don't have other linters configured.

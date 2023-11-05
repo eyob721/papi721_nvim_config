@@ -7,11 +7,6 @@ local function augroup(name)
     return vim.api.nvim_create_augroup("papi_" .. name, { clear = true })
 end
 
--- Don't exapnd tabs for c
-local function augroup(name)
-    return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
-end
-
 vim.api.nvim_create_autocmd({ "BufEnter" }, {
     group = augroup("c_files"),
     pattern = { "*.c", "*.h" },
@@ -19,3 +14,12 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
         vim.opt_local.expandtab = false
     end,
 })
+
+-- Template for disabeling autoformat for certain files
+--
+-- vim.api.nvim_create_autocmd({ "FileType" }, {
+--   pattern = { "lua" },
+--   callback = function()
+--     vim.b.autoformat = false
+--   end,
+-- })

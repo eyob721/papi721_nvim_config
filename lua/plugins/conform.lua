@@ -14,6 +14,7 @@ return {
                 lua = { "stylua" },
                 sh = { "shfmt" },
                 c = { "clang-format" },
+                markdown = { "markdownlint" },
                 ["_"] = { "trim_whitespace" },
             },
             -- The options you set here will be merged with the builtin formatters.

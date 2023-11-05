@@ -1,6 +1,7 @@
 # papi721 LazyVim configuration
 
-This is my Neovim configuration based on folke's [LazyVim](https://github.com/LazyVim/LazyVim) setup.
+This is my Neovim configuration based on folke's
+[LazyVim](https://github.com/LazyVim/LazyVim) setup.
 
 ## Formatting C
 
@@ -8,6 +9,7 @@ Okay formatting C codes is a quite troublesome, but you can do so using
 `clang-format`.
 
 Steps:
+
     - Install `clang-format` in mason
     - Use `clang-format` in conform.nvim
     - To format using `clang-format` you need to have a `.clang-format` file
@@ -21,5 +23,6 @@ Steps:
     - Now you are all set
 
 ## References
+
 - A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 - [Documentation](https://lazyvim.github.io/installation) to get started.

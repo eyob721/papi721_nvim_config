@@ -4,7 +4,6 @@ return {
         -- Event to trigger linters
         events = { "BufWritePost", "BufReadPost", "InsertLeave" },
         linters_by_ft = {
-            fish = { "fish" },
             -- shellcheck is not needed here, mason handles it
             -- sh = { "shellcheck" },
             python = { "pycodestyle" },

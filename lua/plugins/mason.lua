@@ -6,6 +6,7 @@ return {
             "shellcheck", -- Bash Linter
             "shfmt", -- Bash Formatter
             "clangd", -- C and C++ Lsp
+            "clang-format", -- C and C++ Formatter
             "pyright", -- Python Lsp
             "pydocstyle", -- Python Formatter for doctrings
             "stylua", -- Lua Formatter

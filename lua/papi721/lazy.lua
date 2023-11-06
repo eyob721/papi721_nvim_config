@@ -14,7 +14,30 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Invoke lazy plugin manager
 
--- Example using a list of specs with the default options
-vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
+local opts = {
+    defaults = {
+        lazy = true, -- should plugins be lazy-loaded?
+    },
+    install = {
+        -- try to load one of these colorschemes when starting an installation during startup
+        colorscheme = { "tokyonight", "habamax" },
+    },
+    change_detection = {
+        notify = true, -- get a notification when changes are found
+    },
+    rtp = {
+        ---@type string[] list any plugins you want to disable here
+        disabled_plugins = {
+            "gzip",
+            "matchit",
+            "matchparen",
+            "netrwPlugin",
+            "tarPlugin",
+            "tohtml",
+            "tutor",
+            "zipPlugin",
+        },
+    },
+}
 
-require("lazy").setup('plugins')
+require("lazy").setup('plugins', opts)

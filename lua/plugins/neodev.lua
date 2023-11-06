@@ -1,2 +1,2 @@
-return {"folke/neodev.nvim"}
+return { "folke/neodev.nvim" }
 

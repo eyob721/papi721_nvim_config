@@ -85,7 +85,7 @@ I have used the following plugins, categorized as follows
 I have organized the files, similar to folke's LazyVim setup, as follows
 
 - lua
-    - configs
+    - papi721
         - options.lua
         - keymaps.lua
         - autocmds.lua
@@ -95,12 +95,11 @@ I have organized the files, similar to folke's LazyVim setup, as follows
 This is how the files are called:
 
 - init.lua
-    - config
-        - options
-        - keymaps
-        - autocmds
-        - lazy
-            - plugins
+    - options
+    - keymaps
+    - autocmds
+    - lazy
+        - plugins
 
 ## Notes
 

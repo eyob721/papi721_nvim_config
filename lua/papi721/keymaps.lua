@@ -27,8 +27,8 @@ map("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
 map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
 
 -- buffers
-map("n", "<C-PageUp>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
-map("n", "<C-PageDown>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+map("n", "<S-PageUp>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
+map("n", "<S-PageDown>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 
 -- Clear search with <esc>
 map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and clear hlsearch" })

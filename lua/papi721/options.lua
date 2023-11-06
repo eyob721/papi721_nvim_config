@@ -12,7 +12,7 @@ opt.shiftround = true -- Rounds indent to multiple of `shiftwidth`, applies to >
 -- [[ Appearance ]]
 opt.number = true -- Show line numbers
 opt.relativenumber = true -- Show relative line numbers
-opt.list = true -- Show some invisible characters (tabs...
+opt.list = false -- Show some invisible characters (tabs...e.t.c)
 opt.showmode = false -- Dont show mode since we have a statusline
 opt.signcolumn = "yes" -- Always show the signcolumn, otherwise it would shift the text each time
 opt.termguicolors = true -- True color support

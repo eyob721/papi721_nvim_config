@@ -9,6 +9,9 @@ return {
             "clang-format", -- C and C++ Formatter
             "pyright", -- Python Lsp
             "pydocstyle", -- Python Formatter for doctrings
+            "isort", -- Python Formatter for import statements
+            "black", -- Python Formatter
+            "markdownlint", -- Markdown Linter
             "stylua", -- Lua Formatter
         },
     },

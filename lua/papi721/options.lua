@@ -55,4 +55,3 @@ opt.splitkeep = "screen" -- Cursor position after opening horizontal split
 opt.wrap = false -- Disable line wrap
 opt.textwidth = 80 -- Use a maximum text width of 80 when editing
 opt.colorcolumn = "+1" -- Draw a colorcolumn at +1 the text width value
-

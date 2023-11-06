@@ -73,6 +73,7 @@ return {
             }, {
                 { name = "buffer" },
             }),
+            -- My formatting
             formatting = {
                 -- fields = { "kind", "abbr", "menu" },
                 format = function(entry, item)

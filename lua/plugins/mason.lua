@@ -11,7 +11,9 @@ return {
             "pydocstyle", -- Python Formatter for doctrings
             "isort", -- Python Formatter for import statements
             "black", -- Python Formatter
+            "marksman", -- Markdown Lsp
             "markdownlint", -- Markdown Linter
+            "prettier", -- Code Formatter for (HTML, CSS, JavaScript, Markdown, ...etc)
             "stylua", -- Lua Formatter
         },
     },

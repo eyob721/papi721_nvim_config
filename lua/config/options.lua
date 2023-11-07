@@ -115,6 +115,6 @@ opt.formatoptions = "tcrqn]" -- tcqj -- jcroqlnt
 opt.grepformat = "%f:%l:%c:%m"
 opt.grepprg = "rg --vimgrep"
 opt.wrap = false -- Disable line wrap
-opt.textwidth = 80
+opt.textwidth = 79
 opt.colorcolumn = "+1"
 -- vim.o.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"

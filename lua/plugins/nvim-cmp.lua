@@ -26,6 +26,25 @@ local kind_icons = {
     TypeParameter = "󰅲",
 }
 
+local completion_opts = {
+    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    winhighlight = "Normal:NormalFloat,FloatBorder:Normal,CursorLine:Visual,Search:None",
+    zindex = 1001,
+    scrolloff = 0,
+    col_offset = 0,
+    side_padding = 1,
+}
+
+local documentation_opts = {
+    -- border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+    border = "rounded",
+    winhighlight = "Normal:NormalFloat,FloatBorder:Normal,CursorLine:Visual,Search:None",
+    zindex = 1001,
+    scrolloff = 0,
+    col_offset = 0,
+    side_padding = 1,
+}
+
 return {
     "hrsh7th/nvim-cmp",
     opts = function()
@@ -84,14 +103,13 @@ return {
                         luasnip = "[Snippet]",
                         buffer = "[Buffer]",
                         path = "[Path]",
-                        nvim_lua = "[NVIM_LUA]",
                     })[entry.source.name]
                     return item
                 end,
             },
             window = {
-                completion = cmp.config.window.bordered(),
-                documentation = cmp.config.window.bordered(),
+                completion = cmp.config.window.bordered(completion_opts),
+                documentation = cmp.config.window.bordered(documentation_opts),
             },
             experimental = {
                 ghost_text = {

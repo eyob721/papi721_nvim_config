@@ -25,8 +25,10 @@ opt.spelllang = { "en" }
 -- [[ Tabs / Indentation ]]
 opt.tabstop = 4 -- Number of spaces a <Tab> counts for
 opt.shiftwidth = 0 -- Number of spaces to use for each space of autoindent
+opt.softtabstop = 4 -- Number of spaces that a <Tab> counts for while performing editing operations
 opt.expandtab = true -- Expand tabs to spaces
 opt.shiftround = true -- Rounds indent to multiple of `shiftwidth`, applies to > and <
+opt.smartindent = true -- automatic indenting
 
 -- [[ Appearance ]]
 opt.number = true -- Show line numbers
@@ -48,7 +50,7 @@ opt.termguicolors = true -- True color support
 vim.g.markdown_recommended_style = 0
 
 -- [[ Behavior ]]
-opt.clipboard = "unnamedplus" -- Sync with system clipboard
+opt.clipboard:append("unnamedplus") -- Sync with system clipboard
 opt.completeopt = "menu,menuone,noselect"
 opt.confirm = true -- Confirm to save changes before exiting modified buffer
 opt.mouse = "a" -- Enable mouse mode
@@ -82,8 +84,8 @@ opt.inccommand = "nosplit" -- preview incremental substitute
 opt.virtualedit = "block" -- Allow cursor to move where there is no text in visual block mode
 
 -- [[ Navigation ]]
-opt.scrolloff = 4 -- Lines of context
-opt.sidescrolloff = 8 -- Columns of context
+opt.scrolloff = 7 -- Lines of context
+opt.sidescrolloff = 5 -- Columns of context
 if vim.fn.has("nvim-0.10") == 1 then
     opt.smoothscroll = true
 end
@@ -109,10 +111,10 @@ else
 end
 
 -- [[ Formatting ]]
-opt.formatoptions = "jcroqlnt" -- tcqj
+opt.formatoptions = "tcrqn]" -- tcqj -- jcroqlnt
 opt.grepformat = "%f:%l:%c:%m"
 opt.grepprg = "rg --vimgrep"
 opt.wrap = false -- Disable line wrap
-opt.textwidth = 80
+opt.textwidth = 79
 opt.colorcolumn = "+1"
-vim.o.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"
+-- vim.o.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"

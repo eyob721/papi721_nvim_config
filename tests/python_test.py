@@ -8,3 +8,6 @@ class Base:
 
     def __str__(self):
         return "dsalkds"
+
+
+print("jdkasd")

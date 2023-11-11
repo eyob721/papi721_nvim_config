@@ -12,6 +12,7 @@ return {
             "isort", -- Python Formatter for import statements
             "black", -- Python Formatter
             "markdownlint", -- Markdown Linter
+            "prettier", -- Formatter for HTML, CSS, JS, Markdown, ... etc.
             "stylua", -- Lua Formatter
         },
     },

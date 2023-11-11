@@ -14,7 +14,7 @@ return {
                 ["lua"] = { "stylua" },
                 ["sh"] = { "shfmt" },
                 ["c"] = { "clang-format" },
-                ["python"] = { "isort", "pydocstyle", "black" },
+                ["python"] = { "isort", "black" },
                 ["javascript"] = { "prettier" },
                 ["javascriptreact"] = { "prettier" },
                 ["typescript"] = { "prettier" },
@@ -49,6 +49,9 @@ return {
                 -- shfmt = {
                 --   prepend_args = { "-i", "2", "-ci" },
                 -- },
+                black = {
+                    prepend_args = { "--line-length=80" },
+                },
             },
         }
         return opts

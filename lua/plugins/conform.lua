@@ -31,6 +31,7 @@ return {
                 ["markdown.mdx"] = { "prettier" },
                 ["graphql"] = { "prettier" },
                 ["handlebars"] = { "prettier" },
+                ["sql"] = { "sqlfmt" },
                 ["_"] = { "trim_whitespace" },
             },
             -- The options you set here will be merged with the builtin formatters.

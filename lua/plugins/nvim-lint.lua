@@ -10,7 +10,6 @@ return {
             -- c = { "cpplint" }, -- not a good linter
             python = { "pycodestyle" },
             markdown = { "markdownlint" },
-
             -- Use the "*" filetype to run linters on all filetypes.
             -- ['*'] = { 'global linter' },
             -- Use the "_" filetype to run linters on filetypes that don't have other linters configured.

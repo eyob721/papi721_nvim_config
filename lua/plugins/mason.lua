@@ -15,6 +15,7 @@ return {
             "markdownlint", -- Markdown Linter
             "prettier", -- Formatter for HTML, CSS, JS, Markdown, ... etc.
             "stylua", -- Lua Formatter
+            "sqlls", -- SQL Lsp
         },
     },
 }

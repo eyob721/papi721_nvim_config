@@ -16,10 +16,11 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
 })
 
 -- Template for disabeling autoformat for certain files
---
--- vim.api.nvim_create_autocmd({ "FileType" }, {
---   pattern = { "lua" },
---   callback = function()
---     vim.b.autoformat = false
---   end,
--- })
+
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    group = augroup("auto_format"),
+    pattern = { "html" },
+    callback = function()
+        vim.b.autoformat = false
+    end,
+})

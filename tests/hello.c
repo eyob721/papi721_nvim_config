@@ -11,6 +11,7 @@ int main(void)
 	int i;
 
 	(void)i;
-	printf("Hello World");
+	if (1)
+		printf("Hello World");
 	return (0);
 }

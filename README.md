@@ -26,3 +26,9 @@ Steps:
 
 - A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 - [Documentation](https://lazyvim.github.io/installation) to get started.
+- For installing a debugger refer to this [wiki](https://github.com/mfussenegger/nvim-dap/wiki)
+## NOTE
+- To install cppdbg:
+ - First download the `.vsix` file from this [link](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+ - Then unzip the file to a location you want
+ - After that add the location to the command attribute in the dap adapter

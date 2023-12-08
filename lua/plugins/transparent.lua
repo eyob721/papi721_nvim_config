@@ -1,3 +1,8 @@
+-- Make sure to use these commands to enable/toggle/disable transparency
+-- :TransparentEnable
+-- :TransparentDisable
+-- :TransparentToggle
+
 return { -- Optional, you don't have to run setup.
     "xiyaowong/transparent.nvim",
     lazy = false,

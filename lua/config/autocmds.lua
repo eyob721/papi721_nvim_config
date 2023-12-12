@@ -24,7 +24,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
         vim.b.autoformat = false
     end,
 })
---
+
 -- vim.api.nvim_create_autocmd({ "BufEnter" }, {
 --     group = augroup("markdown_files"),
 --     pattern = { "*.md" },
@@ -34,3 +34,12 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 --         vim.opt_local.expandtab = true
 --     end,
 -- })
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    group = augroup("js_lint"),
+    pattern = { "*.js" },
+    callback = function()
+        vim.cmd("EslintFixAll")
+        vim.cmd("write")
+    end,
+})

@@ -18,6 +18,7 @@ return {
             "sqlls", -- SQL Lsp
             -- "standardjs", -- Javascript Linter and Formatter
             "typescript-language-server", -- TypeScript & JavaScript Lsp
+            "eslint-lsp", --TypeScript & JavaScript Linter
         },
     },
 }

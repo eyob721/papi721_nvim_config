@@ -32,6 +32,7 @@ return {
                 ["graphql"] = { "prettier" },
                 ["handlebars"] = { "prettier" },
                 ["sql"] = { "sqlfmt" },
+                ["*"] = { "trim_whitespace" },
                 ["_"] = { "trim_whitespace" },
             },
             -- The options you set here will be merged with the builtin formatters.
@@ -60,6 +61,7 @@ return {
                         "--print-width=80", -- default: 80
                         "--no-semi=true", -- default: true
                         "--single-quote=true", -- default: false
+                        "--trailing-comma=es5", -- default: all
                     },
                 },
             },

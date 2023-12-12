@@ -15,7 +15,7 @@ return {
                 ["sh"] = { "shfmt" },
                 ["c"] = { "clang-format" },
                 ["python"] = { "isort", "black" },
-                ["javascript"] = { "prettier" },
+                ["javascript"] = { "standardjs" },
                 ["javascriptreact"] = { "prettier" },
                 ["typescript"] = { "prettier" },
                 ["typescriptreact"] = { "prettier" },
@@ -55,7 +55,7 @@ return {
                 },
                 prettier = {
                     prepend_args = {
-                        "--tab-width=4",
+                        "--tab-width=2",
                         "--use-tabs=false",
                     },
                 },

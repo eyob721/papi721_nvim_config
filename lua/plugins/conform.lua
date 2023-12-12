@@ -55,8 +55,9 @@ return {
                 },
                 prettier = {
                     prepend_args = {
-                        "--tab-width=4",
+                        "--tab-width=2",
                         "--use-tabs=false",
+                        "--print-width=79",
                     },
                 },
             },

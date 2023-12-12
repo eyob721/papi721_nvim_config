@@ -15,7 +15,7 @@ return {
                 ["sh"] = { "shfmt" },
                 ["c"] = { "clang-format" },
                 ["python"] = { "isort", "black" },
-                ["javascript"] = { "standardjs" },
+                ["javascript"] = { "prettier" },
                 ["javascriptreact"] = { "prettier" },
                 ["typescript"] = { "prettier" },
                 ["typescriptreact"] = { "prettier" },

@@ -16,7 +16,7 @@ return {
             "prettier", -- Formatter for HTML, CSS, JS, Markdown, ... etc.
             "stylua", -- Lua Formatter
             "sqlls", -- SQL Lsp
-            "standardjs", -- Javascript Linter and Formatter
+            -- "standardjs", -- Javascript Linter and Formatter
             "typescript-language-server", -- TypeScript & JavaScript Lsp
         },
     },

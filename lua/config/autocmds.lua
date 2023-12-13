@@ -17,11 +17,13 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
 
 -- Template for disabeling autoformat for certain files
 
-vim.api.nvim_create_autocmd({ "FileType" }, {
-    group = augroup("auto_format"),
-    pattern = { "html" },
+vim.api.nvim_create_autocmd({ "BufEnter" }, {
+    group = augroup("web_files"),
+    pattern = { "*.html", "*.css", "*.js" },
     callback = function()
-        vim.b.autoformat = false
+        vim.opt_local.tabstop = 2
+        vim.opt_local.softtabstop = 2
+        vim.opt_local.expandtab = true
     end,
 })
 

@@ -61,7 +61,7 @@ return {
                         "--print-width=80", -- default: 80
                         "--no-semi=true", -- default: true
                         "--single-quote=true", -- default: false
-                        "--trailing-comma=es5", -- default: all
+                        "--trailing-comma=none", -- default: all
                     },
                 },
             },

@@ -31,7 +31,7 @@ return {
                 -- ["markdown.mdx"] = { "prettier" },
                 ["graphql"] = { "prettier" },
                 ["handlebars"] = { "prettier" },
-                ["sql"] = { "sqlfmt" },
+                ["sql"] = { "sql_formatter" },
                 ["*"] = { "trim_whitespace" },
                 ["_"] = { "trim_whitespace" },
             },
@@ -62,6 +62,11 @@ return {
                         "--no-semi=true", -- default: true
                         "--single-quote=true", -- default: false
                         "--trailing-comma=none", -- default: all
+                    },
+                },
+                sql_formatter = {
+                    prepend_args = {
+                        "--config=/home/alxsandbox/.config/nvim/.sql-format.json",
                     },
                 },
             },

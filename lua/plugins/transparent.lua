@@ -5,6 +5,7 @@
 
 return { -- Optional, you don't have to run setup.
     "xiyaowong/transparent.nvim",
+    enabled = false,
     lazy = false,
     groups = {
         "Normal",

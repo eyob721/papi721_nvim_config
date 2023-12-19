@@ -66,7 +66,9 @@ return {
                 },
                 sql_formatter = {
                     prepend_args = {
-                        "--config=/home/alxsandbox/.config/nvim/.sql-format.json",
+                        vim.fn.expand(
+                            "--config=$HOME/.config/nvim/.sql-format.json"
+                        ),
                     },
                 },
             },

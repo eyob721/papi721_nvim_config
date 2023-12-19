@@ -15,27 +15,15 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
     end,
 })
 
--- Template for disabeling autoformat for certain files
-
 vim.api.nvim_create_autocmd({ "BufEnter" }, {
     group = augroup("web_files"),
-    pattern = { "*.html", "*.css", "*.js" },
+    pattern = { "*.md", "*.html", "*.css", "*.js", "*.sql" },
     callback = function()
         vim.opt_local.tabstop = 2
         vim.opt_local.softtabstop = 2
         vim.opt_local.expandtab = true
     end,
 })
-
--- vim.api.nvim_create_autocmd({ "BufEnter" }, {
---     group = augroup("markdown_files"),
---     pattern = { "*.md" },
---     callback = function()
---         vim.opt_local.tabstop = 2
---         vim.opt_local.softtabstop = 2
---         vim.opt_local.expandtab = true
---     end,
--- })
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
     group = augroup("js_lint"),

@@ -6,5 +6,18 @@ return {
       "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-    }
+    },
+    keys = {
+      {
+        "<leader>e",
+        function()
+          require("neo-tree.command").execute({
+            toggle = true,
+            dir = vim.loop.cwd(),
+            position = "left",
+          })
+        end,
+        desc = "Explorer NeoTree (cwd)",
+      },
+    },
 }

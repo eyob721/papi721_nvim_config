@@ -1,4 +1,23 @@
--- [[ Install the Lazy Plugin Manager ]]
+--[[
+==============================================================================
+======================= READ THIS BEFORE CONTINUING ==========================
+==============================================================================
+
+This is my neovim configuration, based on the kickstart template, LazyVim 
+distribution, and as well as different resources on the internet
+
+The different set of configurations are loaded in this order
+    1. Options
+    2. Plugins
+    3. Keymaps
+
+--]]
+
+-- [[ Options ]] -------------------------------------------------------------
+require("config.options")
+
+-- [[ Plugins ]] -------------------------------------------------------------
+-- Install the Lazy Plugin Manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
@@ -65,3 +84,5 @@ require("lazy").setup({
 		},
 	},
 })
+
+-- [[ Keymaps ]] ------------------------------------------------------------

@@ -86,3 +86,4 @@ require("lazy").setup({
 })
 
 -- [[ Keymaps ]] ------------------------------------------------------------
+require("config.keymaps")

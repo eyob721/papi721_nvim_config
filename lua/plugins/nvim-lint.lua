@@ -35,6 +35,11 @@ return {
             --     return vim.fs.find({ "selene.toml" }, { path = ctx.filename, upward = true })[1]
             --   end,
             -- },
+            markdownlint = {
+                args = {
+                    "--disable MD013",
+                },
+            },
         },
     },
 }

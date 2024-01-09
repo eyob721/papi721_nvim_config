@@ -24,4 +24,5 @@ require("lazy").setup({
 		-- 'plugins' is the 'lua/plugins/' directory
 		{ import = "plugins" },
 	},
+	install = { colorscheme = { "catppuccin-mocha", "habamax" } },
 })
